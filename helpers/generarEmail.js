@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 export const emailRegistro = async (datos) => {
     const { nombre, email, token } = datos;
     const transport = nodemailer.createTransport({
-        host: process.env.EMAIL_HOST,
+        service: 'gmail',
         port: process.env.EMAIL_PORT,
         auth: {
             user: process.env.EMAIL_USER,
