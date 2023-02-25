@@ -4,9 +4,9 @@ import { Server } from "socket.io";
 import dotenv from "dotenv"
 import cors from "cors";
 import connectionDb from "./config/db.js";
-import usuarioRoutes from "../Backend/routes/usuarioRoutes.js";
-import proyectoRoutes from "../Backend/routes/proyectoRoutes.js";
-import tareaRouter from "../Backend/routes/tareaRoutes.js";
+import usuarioRoutes from "./routes/usuarioRoutes.js";
+import proyectoRoutes from "./routes/proyectoRoutes.js";
+import tareaRouter from "./routes/tareaRoutes.js";
 //Servidor
 dotenv.config();
 const app = express();
